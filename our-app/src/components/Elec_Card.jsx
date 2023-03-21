@@ -1,6 +1,6 @@
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import ImgSample from "./ImageSample.jsx";
+// import ImgSample from "./ImageSample.jsx";
 
 function Elec_Card(props) {
   return (

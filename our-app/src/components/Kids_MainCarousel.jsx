@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import ImgArray from "./KidsSection_ImagesArray";
-import App from "../App.css";
+// import App from "../App.css";
 
 function Kids_MainCarousel() {
   return (
@@ -11,7 +11,7 @@ function Kids_MainCarousel() {
         <img
           className="d-block w-100 Home_carousel_image"
           src={img}
-          
+          alt=""
         />
       </Carousel.Item>
         )

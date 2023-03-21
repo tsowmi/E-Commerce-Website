@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  MDBContainer,
+  // MDBContainer,
   MDBRow,
   MDBCol,
   MDBCard,

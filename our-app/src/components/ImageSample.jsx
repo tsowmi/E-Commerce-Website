@@ -8,7 +8,7 @@ function ImgSample(props)
 {
     return(
        <Container fluid>
-       <Row><img src={props.source}></img></Row>
+       <Row><img src={props.source} alt=""></img></Row>
        </Container>
     )
 }

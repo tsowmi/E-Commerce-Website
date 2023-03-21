@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 import Navbar from './Navbar'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function Signup() {
   // const [p, setp] = useState();

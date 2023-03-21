@@ -1,5 +1,5 @@
 import React from 'react';
-import home_background from '../images/Home_background.png';
+// import home_background from '../images/Home_background.png';
 
 // import Image from 'react-bootstrap/Image'
 import { AnimationOnScroll } from 'react-animation-on-scroll';

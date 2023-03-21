@@ -132,14 +132,14 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import GoogleIcon from '@mui/icons-material/Google';
 import PersonIcon from '@mui/icons-material/Person';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
-import { Link,useNavigate } from 'react-router-dom'
+// import { Link,useNavigate } from 'react-router-dom'
 
 function App() {
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
-	function navigateHome(){
-		navigate('/')
-	}
+	// function navigateHome(){
+	// 	navigate('/')
+	// }
 
   return (
     <div className='paddingDueToNavbar' >

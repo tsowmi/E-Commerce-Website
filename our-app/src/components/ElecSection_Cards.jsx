@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {off_ImgArr1,off_ImgArr2} from './ElectronicsSection_ImagesArray.js';
-import Elec_Card from "./Elec_Card"
+import ElecCard from "./Elec_Card"
 
 
 
@@ -14,13 +14,13 @@ function Elec_Cards() {
     
     <Row>
     {off_ImgArr1.map(img =>{
-      return(<Col><Elec_Card src={img}/></Col>)
+      return(<Col><ElecCard src={img}/></Col>)
     })}    
     </Row>
 
     <Row> 
     {off_ImgArr2.map(img =>{
-      return(<Col><Elec_Card src={img}/></Col>)
+      return(<Col><ElecCard src={img}/></Col>)
     })}    
     </Row>
 
