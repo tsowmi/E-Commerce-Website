@@ -8,7 +8,7 @@ import Assurance from './assurance'
 import Disclaimer from './disclaimer'
 import Design2 from "./HomeDesign2"
 import Design1 from './Home_Design1'
-import Design3 from "./Home_Design3"
+
 
 
 function Home() {
@@ -16,10 +16,9 @@ function Home() {
     <div className='paddingDueToNavbar'> 
     <Navbar />
     <Carousel />
-    {/* <Trends /> */}
-    <Design1 />
+    <Design1 />    
+    {/* <Trends /> */}    
     <Design2 />
-    <Design3 />
     <Assurance />
     <Disclaimer />
     <Footer color="black"/>

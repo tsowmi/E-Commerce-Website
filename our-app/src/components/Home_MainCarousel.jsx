@@ -4,7 +4,7 @@ import ImgArray from "./Home_CarouselImages_Array.js";
 
 function Carousels() {
   return (
-    <Carousel slide={true} interval={2000} controls={true} style={{marginBottom:"50px"}}>
+    <Carousel slide={true} interval={1000} controls={true} style={{marginBottom:"50px"}}>
     {ImgArray.map(img => {
         return(
           <Carousel.Item>
