@@ -4,7 +4,7 @@ body {
     overflow-x:hidden;
 }
 .paddingDueToNavbar{
-    padding-top:5%;
+    padding-top:4%;
 }
 /* .me-auto{
     margin-right: 10px!important;
@@ -154,7 +154,11 @@ p{
 /* today 18/12/2022*/
 
 .categories{
-    padding: 10%;
+    padding: 6%;
+  }
+
+  .categories:hover{
+    color:'white'
   }
 
   .bold{
@@ -628,3 +632,16 @@ form .button input:hover {
     width: 0;
   }
 }
+
+
+/* /////////////////////////////////////PRODUCT CARD CSS ///////////////////////////////// */
+
+.ratings i{font-size: 16px;color: red}
+.strike-text{color: red;text-decoration: line-through}
+.product-image{width: 100%}
+.dot{height: 7px;width: 7px;margin-left: 6px;margin-right: 6px;margin-top: 3px;background-color: blue;border-radius: 50%;display: inline-block}
+.spec-1{color: #938787;font-size: 15px}
+h5{font-weight: 400}
+.para{font-size: 16px}
+
+

@@ -2,7 +2,10 @@ import { NavItem } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import Badge from '@mui/material/Badge';
 
 
 function CollapsibleExample() {
@@ -20,10 +23,23 @@ function CollapsibleExample() {
         </Navbar.Collapse>
         <Navbar.Brand href="/" className='myBrand'>VS Shoppe</Navbar.Brand>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
-          <NavItem ><Link  className="categories" to="/login" style={{marginRight:"20px", textDecoration:"none", color:"grey"}}> Login</Link></NavItem>
-          <NavItem ><Link  className="categories" to="/signup" style={{textDecoration:"none", color:"grey"}}>Signup</Link></NavItem>
-          </Nav>
+        <Nav className="ms-auto">
+            <NavItem >
+            <Link>
+            <Badge badgeContent={0} color="primary" style={{marginRight:'15px'}}>
+            <ShoppingCartIcon sx={{color: "white"}}/>
+            </Badge>
+            </Link>
+            </NavItem>
+            <NavItem>
+            <Link>
+            <Badge badgeContent={0} color="primary" style={{marginRight:'15px'}}>
+            <FavoriteIcon sx={{color: "white"}}/>
+            </Badge></Link></NavItem>
+            
+            <NavItem ><Link  className="categories" to="/login" style={{marginRight:"10px",marginLeft:'10px', textDecoration:"none", color:"grey"}}> Login</Link></NavItem>
+            <NavItem ><Link  className="categories" to="/signup" style={{textDecoration:"none", color:"grey"}}>Signup</Link></NavItem>
+        </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -32,42 +48,48 @@ function CollapsibleExample() {
 
 export default CollapsibleExample;
 
-
-
-
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-
-// function ColorSchemesExample() {
-//   return (
-//     <>
-//       <Navbar collapseOnSelect expand="md"  bg="dark" variant="dark">
-      
-//         <Container>
-//         <Nav className="me-auto">
-//             <Nav.Link href="login">Login</Nav.Link>
-//             <Nav.Link href="signup">Signup</Nav.Link>
-//           </Nav>
-//         <Navbar.Brand className='brand' href="#home">
-//           <Nav.Link href="/">VS Shoppe</Nav.Link>
-//           </Navbar.Brand> 
-          
-//           <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
-//           <Navbar.Collapse id="navbarScroll">
-//           <Nav className="me-auto">
-//             <Nav.Link href="men">Men</Nav.Link>
-//             <Nav.Link href="women">Women</Nav.Link>
-//             <Nav.Link href="kids">Kids</Nav.Link>
-//             <Nav.Link href="electronics">Electronics</Nav.Link>
-//           </Nav>
-//           </Navbar.Collapse>
-          
-//         </Container>
-//       </Navbar>
-      
-//     </>
+// function Navbar1()
+// {
+//   return(
+//     <nav class="navbar navbar-inverse " style={{marginBottom: "0", width: "100%", height:"90pxS"}}>
+//   <div class="container-fluid">
+//     <div class="navbar-header">
+//       <Link class="navbar-brand" to="/"  style={{textDecoration:"none", color:"grey", fontSize: "40px"}} >VS Shoppie</Link>
+//     </div>
+    
+//       <Link style={{textDecoration:"none", color:"grey", fontSize: "large"}} to="/men">Men</Link>
+//       <Link style={{textDecoration:"none", color:"grey", fontSize:"large"}} to="/women">Women </Link>
+//       <Link style={{textDecoration:"none", color:"grey", fontSize:"large"}} to="/kids">Kids</Link>
+    
+//     <Link style={{textDecoration:"none", color:"grey", fontSize:"large"}} to="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</Link>
+//     <Link style={{textDecoration:"none", color:"grey", fontSize:"large"}} to="/login"><span class="glyphicon glyphicon-log-in"></span> Login</Link>
+    
+//   </div>
+// </nav>
 //   );
 // }
 
-// export default ColorSchemesExample;
+// export default Navbar1;
+
+// function Navbar1()
+// {
+//   return(
+//     <nav className="navbar">
+//       <Link to="/" style={{textDecoration:"none", color:"grey"}}><div id="logoWidth"><div align='left' className="logo" style={{textDecoration:"none" }}>VS Shoppie</div></div></Link>
+//         <ul className="nav-links">
+//           <input type="checkbox" id="checkbox_toggle" /> 
+//          <label for="checkbox_toggle" className="hamburger">&#9776;</label>
+//           <div className="menu">
+//               <li><Link to="/men" style={{textDecoration:"none"}} >Men</Link></li>
+//               <li><Link to="/women" style={{textDecoration:"none"}}>Women</Link></li>
+//               <li><Link to="/kids" style={{textDecoration:"none"}}>Kids</Link></li> 
+//               <li><Link to="/electronics" style={{textDecoration:"none",}}>Electronics</Link></li>              
+//               <li><Link to="/login" style={{textDecoration:"none"}}>Login</Link></li>
+//               <li><Link to="/signup" style={{textDecoration:"none"}}>Sign Up</Link></li>
+//           </div>
+//       </ul>
+//     </nav>
+//   );
+// }
+
+// export default Navbar1;
