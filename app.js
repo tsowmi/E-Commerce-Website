@@ -1,11 +1,17 @@
 require('dotenv').config();                     // for using environment variable protection
 const express =require("express");
 const bodyParser =require("body-parser");
+const cors= require("cors");
+const axios=require("axios");
 
 const mongoose=require("mongoose");
 
 const bcrypt=require("bcrypt");
 const saltRounds=10;
+
+//Backend URL
+const API_URL = "https://samplebckend.onrender.com";
+
 
 const app=express();
 const PORT = process.env.PORT || 3001;
@@ -32,6 +38,15 @@ app.use(bodyParser.urlencoded({
   extended:true
 }));
 
+//frontend and backend configurations
+app.use(cors({ 
+  origin: "https://soft-kangaroo-7f4877.netlify.app/", 
+  credentials: true 
+ }));
+//  axios.default.withCredentials = true;
+// axios.get(`${API_URL}/your/route`);
+
+
 app.post("/login", function(req,res){
 
   const username=req.body.username;
@@ -49,7 +64,7 @@ app.post("/login", function(req,res){
 ;
 })
 
-app.post("/signup",function(req,res){
+app.post("https://soft-kangaroo-7f4877.netlify.app/signup",function(req,res){
   console.log("Heyy!")  
   bcrypt.hash(req.body.passw, saltRounds, function(err, hash) {
     const newUser = new User({

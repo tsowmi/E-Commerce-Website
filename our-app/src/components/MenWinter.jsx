@@ -10,7 +10,7 @@ function Men_winterWear() {
     <div className='paddingDueToNavbar'>
       <Navbar />
       <div class="container mt-5 mb-5">
-      <div class="d-flex justify-content-center row">
+    <div class="d-flex justify-content-center row">
         <div class="col-md-10">
             {MenWinter_Array.map(object=>{
           return(
