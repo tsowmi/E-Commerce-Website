@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer'
 import '../App.css'
@@ -8,17 +7,20 @@ import Assurance from './assurance'
 import Disclaimer from './disclaimer'
 import Design2 from "./HomeDesign2"
 import Design1 from './Home_Design1'
+import Navbar from './Navbar.jsx'
 
 
 
 function Home() {
+  console.log("This is home")
   return (
     <div className='paddingDueToNavbar'> 
     <Navbar />
     <Carousel />
-    <Design1 />    
-    {/* <Trends /> */}    
+    {/* <Trends /> */}
+    <Design1 />
     <Design2 />
+    {/* <Design3 /> */}
     <Assurance />
     <Disclaimer />
     <Footer color="black"/>

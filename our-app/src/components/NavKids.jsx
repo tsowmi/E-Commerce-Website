@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar';
 import Footer from "./Footer";
 import KidsMainCarousel from "./Kids_MainCarousel.jsx";
 import {after_MainCarousel} from "./KidsSection_ImagesArray";
@@ -8,9 +7,11 @@ import KidsBoysRowTable from "./Kids_BoysRow";
 import {momBabyImage} from "./KidsSection_ImagesArray";
 import BabyProducts from "./KidsSection_Mombaby.jsx";
 import ImgSample from "./ImageSample.jsx";
+import Navbar from './Navbar.jsx'
 
 function Kids(){
     return(
+        <>
         <div className='paddingDueToNavbar'>
             <Navbar />
          <KidsMainCarousel />
@@ -22,6 +23,7 @@ function Kids(){
      <BabyProducts />
      <Footer color="lightskyblue"/>
         </div>
+        </>
     )
 }
 

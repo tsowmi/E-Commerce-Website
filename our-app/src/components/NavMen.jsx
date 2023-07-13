@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from './Footer';
-import Navbar from './Navbar'
 import Image from 'react-bootstrap/Image'
 import Shirt from '../images/Shirt.png'
 import Formals from '../images/Formals.png'
@@ -15,18 +14,21 @@ import Deo from '../images/Essential/Deodrants.png'
 import Fossil from '../images/Premium/premium_fossil.png'
 import Gucci from '../images/Premium/premium_gucci.png'
 import Nike from '../images/Premium/premium_nike.png'
-// import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import {Link} from 'react-router-dom'
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Assurance from './assurance'
+import Navbar from './Navbar.jsx'
 import Disclaimer from './disclaimer'
+
 
 import "../App.css"
 // import { margin } from '@mui/system'
 
 
+
 function Men(){
+    
     return(
         <div className='paddingDueToNavbar'>
         

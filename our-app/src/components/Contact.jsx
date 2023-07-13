@@ -1,9 +1,9 @@
 import React from "react";
-// import App from "../App.css"
+import App from "../App.css"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-// import PinterestIcon from '@mui/icons-material/Pinterest';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 
 function Contact(){
     return(

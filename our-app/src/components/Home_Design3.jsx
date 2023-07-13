@@ -1,8 +1,8 @@
 import React from 'react'
-// import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import {homeDesign3} from "./KidsSection_ImagesArray";
 import { useScroll } from "react-use-gesture";
-import { useSpring } from "react-spring";
+import { animated, useSpring } from "react-spring";
 
 
 function Design3(){
@@ -18,8 +18,6 @@ function Design3(){
           }deg)`
         });
       });
-
-      console.log(style,bind)
     
     return(             
               <>

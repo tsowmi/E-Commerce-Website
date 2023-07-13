@@ -1,7 +1,7 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import {Apple1,Apple2} from "./ElectronicsSection_ImagesArray";
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image'
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import "../App.css";

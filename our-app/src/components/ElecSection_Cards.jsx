@@ -14,7 +14,7 @@ function Elec_Cards() {
     
     <Row>
     {off_ImgArr1.map(img =>{
-      return(<Col><ElecCard src={img}/></Col>)
+      return(<Col><ElecCard src={img} /></Col>)
     })}    
     </Row>
 

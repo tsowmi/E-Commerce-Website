@@ -1,8 +1,18 @@
 import React from "react";
-import {MDBContainer} from "mdb-react-ui-kit";
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
+  MDBIcon,
+  MDBRipple,
+  MDBBtn,
+} from "mdb-react-ui-kit";
 import "../App.css";
 import Navbar from './Navbar'
-import EthComp from "./Prod_Card";
+import EthComp from "./Prod_card";
 import BridalDress_array from "./BridalDress_Array";
 
 

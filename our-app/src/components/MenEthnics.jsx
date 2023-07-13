@@ -1,19 +1,12 @@
 import React from "react";
 import {
   MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBIcon,
-  MDBRipple,
-  MDBBtn,
-} from "mdb-react-ui-kit";
+}
+ from "mdb-react-ui-kit";
 import "../App.css";
 import Navbar from './Navbar'
 import EthComp from "./Prod_card";
-import shorts_array from "./MenShorts_Array";
+import ethnic_array from "./MenEthnic_Array";
 
 
 function Ethnics() {
@@ -21,7 +14,7 @@ function Ethnics() {
     <div className='paddingDueToNavbar'>
       <Navbar />
       <MDBContainer fluid>
-        {shorts_array.map(object=>{
+        {ethnic_array.map(object=>{
           return(
             <EthComp 
             image={object.image} 
