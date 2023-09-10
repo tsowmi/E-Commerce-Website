@@ -1,5 +1,3 @@
-Sure! Here's an example of a README file you can use for your e-commerce website with React, Node.js, Express, and MongoDB:
-
 # E-commerce Website
 
 This is an e-commerce website built with React, Node.js, Express, and MongoDB. It provides various features such as user authentication, shopping cart, wishlist, and more.
@@ -32,7 +30,7 @@ This is an e-commerce website built with React, Node.js, Express, and MongoDB. I
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/tsowmi/E-Commerce-Website.git
    ```
 
 2. Navigate to the project directory:
@@ -87,15 +85,4 @@ This is an e-commerce website built with React, Node.js, Express, and MongoDB. I
 
 Contributions are welcome! If you find any issues or have suggestions, please create an issue or submit a pull request.
 
-## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-## Acknowledgments
-
-- [React](https://reactjs.org/)
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-
-Feel free to customize this README file according to your specific project requirements and add any additional sections or information that you think would be helpful.
